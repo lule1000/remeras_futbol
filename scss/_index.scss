@@ -1,0 +1,58 @@
+@media only screen and (min-width: 280px) {
+    header {
+        background-color: #161616;
+
+        .titulo {
+            font-family: 'Merriweather', serif;
+            font-size: 1rem;
+        }
+    }
+
+    main {
+        .fontCardsText {
+            font-size: 0.5rem;
+        }
+
+        .fontCardsTitle {
+            font-size: 0.7rem;
+        }
+
+        .premierLeague {
+            background-color: #6AF3FA;
+        }
+
+        .laLiga {
+            background-color: #FB4B4B;
+        }
+
+        .ligaUberEats {
+            background-color: #96E546;
+        }
+    }
+}
+
+@media only screen and (min-width: 400px) {
+    header {
+        .titulo {
+            font-size: 1.5rem;
+        }
+    }
+
+    main {
+        .fontCardsText {
+            font-size: 0.7rem;
+        }
+
+        .fontCardsTitle {
+            font-size: 1rem;
+        }
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    header {
+        .titulo {
+            font-size: 2rem;
+        }
+    }
+}
