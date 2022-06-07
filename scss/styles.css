@@ -14,13 +14,33 @@ body {
 @media only screen and (min-width: 280px) {
   header {
     background-color: #161616;
+    -webkit-box-shadow: 2px 2px 2px black;
+            box-shadow: 2px 2px 2px black;
   }
   header .titulo {
+    font-family: 'Merriweather', serif;
+    font-size: 1.1rem;
+  }
+  header .linkPrimary:hover {
+    background-color: blue;
+  }
+  .h2Font {
+    font-family: 'Merriweather', serif;
+  }
+  .stickyTop {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0%;
+  }
+  .stickyTop input {
+    height: 30px;
+  }
+  main .h1Text {
     font-family: 'Merriweather', serif;
     font-size: 1rem;
   }
   main .fontCardsText {
-    font-size: 0.5rem;
+    font-size: 0.7rem;
   }
   main .fontCardsTitle {
     font-size: 0.7rem;
@@ -34,14 +54,36 @@ body {
   main .ligaUberEats {
     background-color: #96E546;
   }
+  main .bundesliga {
+    background-color: red;
+  }
+  footer div {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  footer div h6 {
+    font-family: 'Merriweather', serif;
+    font-size: 0.7rem;
+  }
+  footer div input {
+    height: 30px;
+  }
+  footer div button {
+    font-family: 'Merriweather', serif;
+    font-size: 0.7rem;
+  }
 }
 
 @media only screen and (min-width: 400px) {
   header .titulo {
     font-size: 1.5rem;
   }
+  main .h1Text {
+    font-size: 1.7rem;
+  }
   main .fontCardsText {
-    font-size: 0.7rem;
+    font-size: 1rem;
   }
   main .fontCardsTitle {
     font-size: 1rem;
@@ -51,6 +93,24 @@ body {
 @media only screen and (min-width: 700px) {
   header .titulo {
     font-size: 2rem;
+  }
+  main .h1Text {
+    font-size: 2.5rem;
+  }
+  footer div h6 {
+    font-size: 1.2rem;
+  }
+  footer div input {
+    height: 30px;
+  }
+  footer div button {
+    font-size: 1.1rem;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  main .h1Text {
+    font-size: 3.5rem;
   }
 }
 /*# sourceMappingURL=styles.css.map */
