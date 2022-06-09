@@ -5,28 +5,57 @@
         .titulo {
             font-family: 'Merriweather', serif;
             font-size: 1.1rem;
+            color: #46e549;
+            text-decoration: none;
         }
-        .linkPrimary:hover {
-            background-color: blue;
+        .linkGreen:hover {
+            background-color: #46e549;
         }
+    }
+
+    .bgVerde {
+        background-color: #46e549;
     }
 
     .h2Font {
         font-family: 'Merriweather', serif;
+        color: #46e549;
     }
 
     .stickyTop {
         position: sticky;
         top: 0%;
-        input {
-            height: 30px;
-        }
+    }
+
+    .notificacion {
+        font-size: 0.7rem;
     }
 
     main {
         .h1Text {
             font-family: 'Merriweather', serif;
             font-size: 1rem;
+            color: #46e549;
+        }
+
+        #premierIcon {
+            width: 12%;
+        }
+
+        #laLigaIcon {
+            width: 20%;
+        }
+
+        #ligue1Icon {
+            width: 10%;
+        }
+
+        #serieAIcon {
+            width: 10%;
+        }
+
+        #bundesligaIcon {
+            width: 14%;
         }
 
         .fontCardsText {
@@ -62,11 +91,11 @@
             font-size: 0.7rem;
         }
         div input {
-            height: 30px;
+            height: 20px;
         }
         div button {
             font-family: 'Merriweather', serif;
-            font-size: 0.7rem;
+            font-size: 0.5rem;
         }
     }
 }
@@ -82,6 +111,7 @@
         .h1Text {
             font-size: 1.7rem;
         }
+
         .fontCardsText {
             font-size: 1rem;
         }
@@ -98,9 +128,34 @@
             font-size: 2rem;
         }
     }
+
+    .notificacion {
+        font-size: 1rem;
+    }
+
     main {
         .h1Text {
             font-size: 2.5rem;
+        }
+
+        #premierIcon {
+            width: 7%;
+        }
+
+        #laLigaIcon {
+            width: 15%;
+        }
+
+        #ligue1Icon {
+            width: 7%;
+        }
+
+        #serieAIcon {
+            width: 7%;
+        }
+
+        #bundesligaIcon {
+            width: 10%;
         }
     }
     footer {
@@ -120,6 +175,26 @@
     main {
         .h1Text {
             font-size: 3.5rem;
+        }
+
+        #premierIcon {
+            width: 5%;
+        }
+
+        #laLigaIcon {
+            width: 10%;
+        }
+
+        #ligue1Icon {
+            width: 6%;
+        }
+
+        #serieAIcon {
+            width: 6%;
+        }
+
+        #bundesligaIcon {
+            width: 7%;
         }
     }
 }

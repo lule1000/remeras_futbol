@@ -13,36 +13,37 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Cinzel+Decorative&family=Cormorant+Infant:wght@300&family=Merriweather&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
   <link rel="stylesheet" href="scss/styles.css">
   <title>Football Shirts</title>
 </head>
 
 <body>
-  <header>
+  <header class="ms-1 me-1">
     <nav class="navbar navbar-expand-lg navbar-dark d-flex justify-content-between">
       <a class="navbar-brand" href="index.html">
         <img src="images/logoPelota (1).png" alt="logo">
       </a>
-      <a class="navbar-brand titulo text-primary" href="index.html">Football Shirts</a>
+      <a class="titulo me-1" href="index.html">Football Shirts</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-link active colorTexto linkPrimary" aria-current="page" href="index.html">Home</a>
-          <a class="nav-link active colorTexto linkPrimary" href="#">Products</a>
-          <a class="nav-link active colorTexto linkPrimary" href="#">About Us</a>
-          <a class="nav-link active colorTexto linkPrimary" href="#">FAQS</a>
+          <a class="nav-link active colorTexto linkGreen" aria-current="page" href="index.html">Home</a>
+          <a class="nav-link active colorTexto linkGreen" href="#">Products</a>
+          <a class="nav-link active colorTexto linkGreen" href="#">About Us</a>
+          <a class="nav-link active colorTexto linkGreen" href="#">FAQS</a>
         </div>
       </div>
     </nav>
   </header>
 
   <div class="stickyTop d-flex justify-content-between mb-1 mt-2">
-    <input type="text" id="searchProdcut" class="w-50 ms-3" placeholder=" Search...">
-    <button class="me-3 rounded-3 bg-primary">
-      <a class="stickyTop nav-link active text-white" id="cantidadProductos" href="archivos_htmls/carrito.html">CART</a>
+    <input type="text" id="searchProdcut" class="w-50 ms-3 rounded-2" placeholder=" Search...">
+    <button class="me-3 rounded-3 bgVerde">
+      <a class="text-white text-decoration-none" id="cantidadProductos" href="archivos_htmls/carrito.html">CART</a>
     </button>
   </div>
 
@@ -84,71 +85,73 @@
       </div>
 
       <div class="col-md-6 m-3">
-        <h2 class="h2Font text-primary overflow-hidden">About Us</h2>
-        <p class="text-white">We are a group of people passionate about soccer and lovers of t-shirt designs. We believe that the clothes represent something more than a simple cloth, since they can bring us the memory of that historic season of the team that one supports or the goal that you shouted that day on the field.</p>
+        <h2 class="h2Font overflow-hidden">About Us</h2>
+        <p class="text-white">We are a group of people passionate about soccer and lovers of t-shirt designs. We believe
+          that the clothes represent something more than a simple cloth, since they can bring us the memory of that
+          historic season of the team that one supports or the goal that you shouted that day on the field.</p>
       </div>
     </div>
   </div>
 
   <main class="d-grid m-1 m-sm-2">
-    <h1 class=" text-primary h1Text overflow-hidden">Featured Products</h1>
+    <h1 class="h1Text text-center overflow-hidden">Featured Products</h1>
     <!--PREMIER LEAGUE-->
     <div class="premierLeague mb-5 container-fluid">
-      <img src="images/vector_premier.svg" width="5%" class="m-3 d-flex flex-row" alt="Logo Premier">
+      <img src="images/vector_premier.svg" id="premierIcon" class="m-3 d-flex flex-row" alt="Logo Premier">
       <!--1ra fila-->
-      <div id="primeraFilaPremier" class="row flex-nowrap justify-content-between m-1 mb-4">
+      <div id="primeraFilaPremier" class="row flex-md-nowrap justify-content-between m-1 mb-4">
       </div>
 
       <!--2da fila-->
-      <div id="segundaFilaPremier" class="row flex-nowrap justify-content-between mb-5 m-1">
+      <div id="segundaFilaPremier" class="row flex-md-nowrap justify-content-between mb-5 m-1">
       </div>
     </div>
 
     <!--LA LIGA-->
     <div class="laLiga mb-5 container-fluid">
-      <img src="images/laLiga.svg" width="10%" class="m-3 d-flex flex-row" alt="logo La Liga">
+      <img src="images/laLiga.svg" id="laLigaIcon" class="m-3 d-flex flex-row" alt="logo La Liga">
       <!--1ra fila-->
-      <div id="primeraFilaLaLiga" class="row flex-nowrap justify-content-between mb-4 m-1">
+      <div id="primeraFilaLaLiga" class="row flex-md-nowrap justify-content-between mb-4 m-1">
       </div>
 
       <!--2da fila-->
-      <div id="segundaFilaLaLiga" class="row flex-nowrap justify-content-between mb-5 m-1">
+      <div id="segundaFilaLaLiga" class="row flex-md-nowrap justify-content-between mb-5 m-1">
       </div>
     </div>
 
     <!--LIGA UBER EATS-->
     <div class="ligaUberEats mb-5 container-fluid">
-      <img src="images/ligue-1-logo.svg" width="6%" class="m-3 d-flex flex-row" alt="Logo Ligue 1">
+      <img src="images/ligue-1-logo.svg" id="ligue1Icon" class="m-3 d-flex flex-row" alt="Logo Ligue 1">
       <!--1ra fila-->
-      <div id="primeraFilaUberEats" class="row flex-nowrap justify-content-between mb-4 m-1">
+      <div id="primeraFilaUberEats" class="row flex-md-nowrap justify-content-between mb-4 m-1">
       </div>
 
       <!--2da fila-->
-      <div id="segundaFilaUberEats" class="row flex-nowrap justify-content-between mb-5 m-1">
+      <div id="segundaFilaUberEats" class="row flex-md-nowrap justify-content-between mb-5 m-1">
       </div>
     </div>
 
     <!--SERIE A-->
     <div class="mb-5 container-fluid bg-success">
-      <img src="images/serieA-logo.svg" width="6%" class="m-3 d-flex flex-row" alt="Logo Serie A">
+      <img src="images/serieA-logo.svg" id="serieAIcon" class="m-3 d-flex flex-row" alt="Logo Serie A">
       <!--1ra fila-->
-      <div id="primeraFilaSerieA" class="row flex-nowrap justify-content-between mb-4 m-1">
+      <div id="primeraFilaSerieA" class="row flex-md-nowrap justify-content-between mb-4 m-1">
       </div>
 
       <!--2da fila-->
-      <div id="segundaFilaSerieA" class="row flex-nowrap justify-content-between mb-5 m-1">
+      <div id="segundaFilaSerieA" class="row flex-md-nowrap justify-content-between mb-5 m-1">
       </div>
     </div>
 
     <!--BUNDESLIGA-->
     <div class="bundesliga mb-5 container-fluid">
-      <img src="images/bundesligaLiga.svg" width="8%" class="m-3 d-flex flex-row" alt="Bundesliga">
+      <img src="images/bundesligaLiga.svg" id="bundesligaIcon" class="m-3 d-flex flex-row" alt="Bundesliga">
       <!--1ra fila-->
-      <div id="primeraFilaBundesliga" class="row flex-nowrap justify-content-between mb-4 m-1">
+      <div id="primeraFilaBundesliga" class="row flex-md-nowrap justify-content-between mb-4 m-1">
       </div>
 
       <!--2da fila-->
-      <div id="segundaFilaBundesliga" class="row flex-nowrap justify-content-between mb-5 m-1">
+      <div id="segundaFilaBundesliga" class="row flex-md-nowrap justify-content-between mb-5 m-1">
       </div>
     </div>
   </main>
@@ -156,16 +159,17 @@
   <footer>
     <div class="container-fluid d-flex flex-row justify-content-center mb-2">
       <h6 class="text-white overflow-hidden me-1">Subscribe to receive the latest news</h6>
-      <input class="mb-1" type="email" placeholder=" Email-Adress...">
-      <button class="bg-primary rounded-2 ms-1 mb-1">Sign Up!</button>
+      <input class="mb-1 w-25 rounded-2" type="email" placeholder=" Email-Adress...">
+      <button class="bgVerde rounded-2 ms-1 mb-1">Sign Up!</button>
     </div>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
-  <script src="productos.js"></script>
-  <script src="main.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <script src="archivos_js/productos.js"></script>
+  <script src="archivos_js/main.js"></script>
 </body>
 
 </html>

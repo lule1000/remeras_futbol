@@ -20,24 +20,46 @@ body {
   header .titulo {
     font-family: 'Merriweather', serif;
     font-size: 1.1rem;
+    color: #46e549;
+    text-decoration: none;
   }
-  header .linkPrimary:hover {
-    background-color: blue;
+  header .linkGreen:hover {
+    background-color: #46e549;
+  }
+  .bgVerde {
+    background-color: #46e549;
   }
   .h2Font {
     font-family: 'Merriweather', serif;
+    color: #46e549;
   }
   .stickyTop {
     position: -webkit-sticky;
     position: sticky;
     top: 0%;
   }
-  .stickyTop input {
-    height: 30px;
+  .notificacion {
+    font-size: 0.7rem;
   }
   main .h1Text {
     font-family: 'Merriweather', serif;
     font-size: 1rem;
+    color: #46e549;
+  }
+  main #premierIcon {
+    width: 12%;
+  }
+  main #laLigaIcon {
+    width: 20%;
+  }
+  main #ligue1Icon {
+    width: 10%;
+  }
+  main #serieAIcon {
+    width: 10%;
+  }
+  main #bundesligaIcon {
+    width: 14%;
   }
   main .fontCardsText {
     font-size: 0.7rem;
@@ -67,11 +89,11 @@ body {
     font-size: 0.7rem;
   }
   footer div input {
-    height: 30px;
+    height: 20px;
   }
   footer div button {
     font-family: 'Merriweather', serif;
-    font-size: 0.7rem;
+    font-size: 0.5rem;
   }
 }
 
@@ -94,8 +116,26 @@ body {
   header .titulo {
     font-size: 2rem;
   }
+  .notificacion {
+    font-size: 1rem;
+  }
   main .h1Text {
     font-size: 2.5rem;
+  }
+  main #premierIcon {
+    width: 7%;
+  }
+  main #laLigaIcon {
+    width: 15%;
+  }
+  main #ligue1Icon {
+    width: 7%;
+  }
+  main #serieAIcon {
+    width: 7%;
+  }
+  main #bundesligaIcon {
+    width: 10%;
   }
   footer div h6 {
     font-size: 1.2rem;
@@ -111,6 +151,21 @@ body {
 @media only screen and (min-width: 1000px) {
   main .h1Text {
     font-size: 3.5rem;
+  }
+  main #premierIcon {
+    width: 5%;
+  }
+  main #laLigaIcon {
+    width: 10%;
+  }
+  main #ligue1Icon {
+    width: 6%;
+  }
+  main #serieAIcon {
+    width: 6%;
+  }
+  main #bundesligaIcon {
+    width: 7%;
   }
 }
 /*# sourceMappingURL=styles.css.map */

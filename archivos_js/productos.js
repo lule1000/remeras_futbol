@@ -174,7 +174,7 @@ const primeraFilaSerieA = [
         id : 27,
     },
     {
-        nombre : 'Shirt New Balance Roma 21/22 Home',
+        nombre : 'Shirt New Balance Roma 22/23 Home',
         precio : 11900,
         imagen : "./images/remeraRoma (1).jpg",
         id : 28,
