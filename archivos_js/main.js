@@ -193,7 +193,7 @@ let botones = document.querySelectorAll('.anadirAlCarrito');
 
 botones.forEach(elemento => {
     elemento.addEventListener('click', anadirCarrito);
-})
+});
 
 function anadirCarrito(e) {
     Toastify({
@@ -240,8 +240,6 @@ function carritoNav(arrayCarrito) {
         totalProductos += producto.cantidad;
 
         numProductos.innerHTML = '';
-        numProductos.innerHTML = `<a class="stickyTop nav-link active text-white"> CART (${totalProductos})</a>`
+        numProductos.innerHTML = `<span class='cart-badge'>${totalProductos}</span>`
     }
 }
-
-//TERMINA EL CARRITO

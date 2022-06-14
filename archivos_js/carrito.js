@@ -9,7 +9,7 @@ function rellenarCarrito (arrayCarrito){
                          <td>$${producto.precio}</td>
                          <td>${producto.cantidad}</td>
                          <td>$${producto.subtotal}</td>
-                         <td><button id='${producto.id}' class='btn btn-danger eliminarProducto'>Delate</button></td>`;
+                         <td><button id='${producto.id}' class='btn btn-danger eliminarProducto'>Delete</button></td>`;
     tbody.appendChild (tr);
     }
 }

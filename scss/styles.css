@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0%;
   padding: 0%;
@@ -40,6 +41,22 @@ body {
   }
   .notificacion {
     font-size: 0.7rem;
+  }
+  .cart-badge {
+    display: block;
+    width: 27px;
+    height: 27px;
+    font-size: 1rem;
+    text-align: center;
+    color: white;
+    border-radius: 50%;
+    background: #46e549;
+  }
+  #tamañoSvg {
+    width: 40px;
+  }
+  #cantidadProductos {
+    margin-left: 13px;
   }
   main .h1Text {
     font-family: 'Merriweather', serif;
@@ -115,6 +132,9 @@ body {
 @media only screen and (min-width: 700px) {
   header .titulo {
     font-size: 2rem;
+  }
+  #tamañoSvg {
+    width: 50px;
   }
   .notificacion {
     font-size: 1rem;

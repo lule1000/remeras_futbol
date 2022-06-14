@@ -40,11 +40,24 @@
     </nav>
   </header>
 
-  <div class="stickyTop d-flex justify-content-between mb-1 mt-2">
-    <input type="text" id="searchProdcut" class="w-50 ms-3 rounded-2" placeholder=" Search...">
-    <button class="me-3 rounded-3 bgVerde">
-      <a class="text-white text-decoration-none" id="cantidadProductos" href="archivos_htmls/carrito.html">CART</a>
-    </button>
+  <div class="container-fluid d-flex justify-content-between align-items-center mt-1">
+    <input id="searchProduct" class="w-50 ms-1 rounded-2" placeholder=" Search...">
+    <div class="wrapper">
+      <a class="text-decoration-none" href="./archivos_htmls/carrito.html">
+        <span id="cantidadProductos" class='cart-badge'>0</span>
+      </a>
+      <svg id="tamañoSvg" viewBox="0 0 202 167.3">
+        <style>
+          .st0 {
+            fill: #FFFFFF;
+          }
+        </style>
+        <path class="st0"
+          d="M156.5,107.5H66.5c-3.4,0-6.3-2.4-7-5.6L45.8,37.2l-12.9-1c-3.9-0.3-6.9-3.7-6.6-7.6c0.3-3.9,3.7-6.9,7.6-6.6l18.3,1.4c3.2,0.2,5.8,2.5,6.4,5.6l13.7,64.2h78.4L161,45.5c0.8-3.9,4.6-6.3,8.5-5.5c3.9,0.8,6.3,4.6,5.5,8.5l-11.5,53.4C162.7,105.1,159.8,107.5,156.5,107.5z" />
+        <circle class="st0" cx="82.1" cy="130.8" r="14.2" />
+        <circle class="st0" cx="142" cy="130.8" r="14.2" />
+      </svg>
+    </div>
   </div>
 
   <!--CARROUSEL PUBLICIDAD Y TEXTO-->
@@ -99,11 +112,11 @@
     <div class="premierLeague mb-5 container-fluid">
       <img src="images/vector_premier.svg" id="premierIcon" class="m-3 d-flex flex-row" alt="Logo Premier">
       <!--1ra fila-->
-      <div id="primeraFilaPremier" class="row flex-md-nowrap justify-content-between m-1 mb-4">
+      <div id="primeraFilaPremier" class="row flex-md-nowrap justify-content-between m-1">
       </div>
 
       <!--2da fila-->
-      <div id="segundaFilaPremier" class="row flex-md-nowrap justify-content-between mb-5 m-1">
+      <div id="segundaFilaPremier" class="row flex-md-nowrap justify-content-between m-1">
       </div>
     </div>
 
@@ -111,11 +124,11 @@
     <div class="laLiga mb-5 container-fluid">
       <img src="images/laLiga.svg" id="laLigaIcon" class="m-3 d-flex flex-row" alt="logo La Liga">
       <!--1ra fila-->
-      <div id="primeraFilaLaLiga" class="row flex-md-nowrap justify-content-between mb-4 m-1">
+      <div id="primeraFilaLaLiga" class="row flex-md-nowrap justify-content-between m-1">
       </div>
 
       <!--2da fila-->
-      <div id="segundaFilaLaLiga" class="row flex-md-nowrap justify-content-between mb-5 m-1">
+      <div id="segundaFilaLaLiga" class="row flex-md-nowrap justify-content-between m-1">
       </div>
     </div>
 
@@ -123,7 +136,7 @@
     <div class="ligaUberEats mb-5 container-fluid">
       <img src="images/ligue-1-logo.svg" id="ligue1Icon" class="m-3 d-flex flex-row" alt="Logo Ligue 1">
       <!--1ra fila-->
-      <div id="primeraFilaUberEats" class="row flex-md-nowrap justify-content-between mb-4 m-1">
+      <div id="primeraFilaUberEats" class="row flex-md-nowrap justify-content-between m-1">
       </div>
 
       <!--2da fila-->
@@ -135,7 +148,7 @@
     <div class="mb-5 container-fluid bg-success">
       <img src="images/serieA-logo.svg" id="serieAIcon" class="m-3 d-flex flex-row" alt="Logo Serie A">
       <!--1ra fila-->
-      <div id="primeraFilaSerieA" class="row flex-md-nowrap justify-content-between mb-4 m-1">
+      <div id="primeraFilaSerieA" class="row flex-md-nowrap justify-content-between m-1">
       </div>
 
       <!--2da fila-->
@@ -147,7 +160,7 @@
     <div class="bundesliga mb-5 container-fluid">
       <img src="images/bundesligaLiga.svg" id="bundesligaIcon" class="m-3 d-flex flex-row" alt="Bundesliga">
       <!--1ra fila-->
-      <div id="primeraFilaBundesliga" class="row flex-md-nowrap justify-content-between mb-4 m-1">
+      <div id="primeraFilaBundesliga" class="row flex-md-nowrap justify-content-between m-1">
       </div>
 
       <!--2da fila-->
@@ -170,6 +183,7 @@
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
   <script src="archivos_js/productos.js"></script>
   <script src="archivos_js/main.js"></script>
+  <script src="archivos_js/filtroBusqueda.js"></script>
 </body>
 
 </html>

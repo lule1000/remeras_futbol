@@ -31,6 +31,26 @@
         font-size: 0.7rem;
     }
 
+    //SVG CARRITO
+    .cart-badge {
+        display: block;
+        width: 27px;
+        height: 27px;
+        font-size: 1rem;
+        text-align: center;
+        color: white;
+        border-radius: 50%;
+        background: #46e549;
+    }
+
+    #tamañoSvg {
+        width: 40px;
+    }
+
+    #cantidadProductos {
+        margin-left: 13px;
+    }
+
     main {
         .h1Text {
             font-family: 'Merriweather', serif;
@@ -127,6 +147,10 @@
         .titulo {
             font-size: 2rem;
         }
+    }
+
+    #tamañoSvg {
+        width: 50px;
     }
 
     .notificacion {
