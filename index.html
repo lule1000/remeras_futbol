@@ -31,10 +31,10 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-link active colorTexto linkGreen" aria-current="page" href="index.html">Home</a>
-          <a class="nav-link active colorTexto linkGreen" href="#">Products</a>
-          <a class="nav-link active colorTexto linkGreen" href="#">About Us</a>
-          <a class="nav-link active colorTexto linkGreen" href="#">FAQS</a>
+          <a class="nav-link active linkGreen" href="index.html">Home</a>
+          <a class="nav-link active linkGreen" href="#">Products</a>
+          <a class="nav-link active linkGreen" href="#">About Us</a>
+          <a class="nav-link active linkGreen" href="#">FAQS</a>
         </div>
       </div>
     </nav>
@@ -78,10 +78,10 @@
               <img src="images/imagenSale.png" class="d-block w-100" alt="Sale">
             </div>
             <div class="carousel-item">
-              <img src="images/remeraClasicas (1).jpg" class="d-block w-100" alt="Remeras clasicas">
+              <img src="images/remerasVarias (1).png" class="d-block w-100" alt="Remeras clasicas">
             </div>
             <div class="carousel-item">
-              <img src="images/mejoresLigas (1).jpg" class="d-block w-100" alt="Ligas con las que trabajamos">
+              <img src="images/mejoresLigas.jpg" class="d-block w-100" alt="Ligas con las que trabajamos">
             </div>
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -106,34 +106,44 @@
     </div>
   </div>
 
+  <!--MARCAS LOGOS-->
+  <div class="container-fluid">
+    <div class="bgVerde d-flex justify-content-center m-2 m-sm-5 rounded-3">
+      <img class="m-1 m-sm-3 m-md-4 m-lg-5" src="images/logoNike.svg" alt="Logo Nike">
+      <img class="m-1 m-sm-3 m-md-4 m-lg-5"  src="images/logoAdidas.svg" alt="Logo Adidas">
+      <img class="m-1 m-sm-3 m-md-4 m-lg-5"  src="images/logoUA.svg" alt="Logo Under Armour">
+      <img class="m-1 m-sm-3 m-md-4 m-lg-5"  src="images/logoPuma.svg" alt="Logo Puma">
+      <img class="m-1 m-sm-3 m-md-4 m-lg-5"  src="images/logoKappa.svg" alt="Logo Kappa">
+    </div>
+  </div>
+
   <main class="d-grid m-1 m-sm-2">
-    <h1 class="h1Text text-center overflow-hidden">Featured Products</h1>
     <!--PREMIER LEAGUE-->
-    <div class="premierLeague mb-5 container-fluid">
+    <div class="premierLeague mb-5 container-fluid rounded-1">
       <img src="images/vector_premier.svg" id="premierIcon" class="m-3 d-flex flex-row" alt="Logo Premier">
       <!--1ra fila-->
       <div id="primeraFilaPremier" class="row flex-md-nowrap justify-content-between m-1">
       </div>
 
       <!--2da fila-->
-      <div id="segundaFilaPremier" class="row flex-md-nowrap justify-content-between m-1">
+      <div id="segundaFilaPremier" class="row flex-md-nowrap justify-content-between mb-5 m-1">
       </div>
     </div>
 
     <!--LA LIGA-->
-    <div class="laLiga mb-5 container-fluid">
+    <div class="laLiga mb-5 container-fluid rounded-1">
       <img src="images/laLiga.svg" id="laLigaIcon" class="m-3 d-flex flex-row" alt="logo La Liga">
       <!--1ra fila-->
       <div id="primeraFilaLaLiga" class="row flex-md-nowrap justify-content-between m-1">
       </div>
 
       <!--2da fila-->
-      <div id="segundaFilaLaLiga" class="row flex-md-nowrap justify-content-between m-1">
+      <div id="segundaFilaLaLiga" class="row flex-md-nowrap justify-content-between mb-5 m-1">
       </div>
     </div>
 
     <!--LIGA UBER EATS-->
-    <div class="ligaUberEats mb-5 container-fluid">
+    <div class="ligaUberEats mb-5 container-fluid rounded-1">
       <img src="images/ligue-1-logo.svg" id="ligue1Icon" class="m-3 d-flex flex-row" alt="Logo Ligue 1">
       <!--1ra fila-->
       <div id="primeraFilaUberEats" class="row flex-md-nowrap justify-content-between m-1">
@@ -145,7 +155,7 @@
     </div>
 
     <!--SERIE A-->
-    <div class="mb-5 container-fluid bg-success">
+    <div class="mb-5 container-fluid bg-success rounded-1">
       <img src="images/serieA-logo.svg" id="serieAIcon" class="m-3 d-flex flex-row" alt="Logo Serie A">
       <!--1ra fila-->
       <div id="primeraFilaSerieA" class="row flex-md-nowrap justify-content-between m-1">
@@ -157,7 +167,7 @@
     </div>
 
     <!--BUNDESLIGA-->
-    <div class="bundesliga mb-5 container-fluid">
+    <div class="bundesliga mb-5 container-fluid rounded-1">
       <img src="images/bundesligaLiga.svg" id="bundesligaIcon" class="m-3 d-flex flex-row" alt="Bundesliga">
       <!--1ra fila-->
       <div id="primeraFilaBundesliga" class="row flex-md-nowrap justify-content-between m-1">
@@ -170,10 +180,12 @@
   </main>
 
   <footer>
-    <div class="container-fluid d-flex flex-row justify-content-center mb-2">
-      <h6 class="text-white overflow-hidden me-1">Subscribe to receive the latest news</h6>
-      <input class="mb-1 w-25 rounded-2" type="email" placeholder=" Email-Adress...">
-      <button class="bgVerde rounded-2 ms-1 mb-1">Sign Up!</button>
+    <div class="container-fluid d-flex flex-row justify-content-center align-items-center mb-2">
+      <h6 class="text-white overflow-hidden me-2">Subscribe to receive the latest news</h6>
+      <div>
+        <input type="email" class="form-control" id="floatingInput" placeholder="Email Adress...">
+      </div>
+      <button type="button" class="btn btn-outline-success ms-2">Sign Up</button>
     </div>
   </footer>
 

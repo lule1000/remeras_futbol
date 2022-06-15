@@ -22,11 +22,6 @@
         color: #46e549;
     }
 
-    .stickyTop {
-        position: sticky;
-        top: 0%;
-    }
-
     .notificacion {
         font-size: 0.7rem;
     }
@@ -48,16 +43,10 @@
     }
 
     #cantidadProductos {
-        margin-left: 13px;
+        margin-left: 9px;
     }
 
     main {
-        .h1Text {
-            font-family: 'Merriweather', serif;
-            font-size: 1rem;
-            color: #46e549;
-        }
-
         #premierIcon {
             width: 12%;
         }
@@ -110,9 +99,6 @@
             font-family: 'Merriweather', serif;
             font-size: 0.7rem;
         }
-        div input {
-            height: 20px;
-        }
         div button {
             font-family: 'Merriweather', serif;
             font-size: 0.5rem;
@@ -151,6 +137,10 @@
 
     #tamañoSvg {
         width: 50px;
+    }
+
+    #cantidadProductos {
+        margin-left: 13px;
     }
 
     .notificacion {
