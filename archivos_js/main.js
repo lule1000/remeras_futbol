@@ -22,7 +22,7 @@ const divContainer8 = document.getElementById('segundaFilaSerieA');
 const divContainer9 = document.getElementById('primeraFilaBundesliga');
 const divContainer10 = document.getElementById('segundaFilaBundesliga');
 
-fetch('../productos.json')
+fetch('../archivos_json/productos.json')
     .then((resp) => resp.json())
     .then((data) => {
         data.primeraFilaPremier.forEach((producto) => {
