@@ -22,9 +22,16 @@ const divContainer8 = document.getElementById('segundaFilaSerieA');
 const divContainer9 = document.getElementById('primeraFilaBundesliga');
 const divContainer10 = document.getElementById('segundaFilaBundesliga');
 
-fetch('.././archivos_json/productos.json')
+cargarProductos();
+
+function cargarProductos(){
+fetch("./productos.json")
     .then((resp) => resp.json())
-    .then((data) => {
+    .then((json) => mostrarcarrito(json))
+
+}
+
+function mostrarcarrito(data){
         data.primeraFilaPremier.forEach((producto) => {
             let div = document.createElement('div');
             div.classList = 'card col-6 col-md-3 m-md-1 mb-1 mb-md-0'
@@ -135,6 +142,7 @@ fetch('.././archivos_json/productos.json')
                          </div>`;
             divContainer10.appendChild(div);
         })
+	
         let carritoLocalStorage = JSON.parse(localStorage.getItem('carrito'));
         carritoLocalStorage && carritoNav(carritoLocalStorage);
 
@@ -194,4 +202,4 @@ fetch('.././archivos_json/productos.json')
                 numProductos.innerHTML = `<span class='cart-badge'>${totalProductos}</span>`
             }
         }
-    })
+    }
